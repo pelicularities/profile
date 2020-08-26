@@ -19,6 +19,14 @@ h1 {
 h2 {
   font-size: 1.4rem;
 }
+#tagline {
+  position: relative;
+}
+#tagline img {
+  position: absolute;
+  bottom: 5px;
+  margin-left: 5px;
+}
 .img-circle {
   border-radius: 50%;
 }
@@ -58,13 +66,40 @@ a:hover {
   background-color: #FCF9ED;
   color: #21221B;
   padding: 2em;
-  border: 1px solid #C6C9BB;
-  border-radius: .5em;
-  box-shadow: .1em .1em .1em #C6C9BB;
+  border-radius: .3em;
+  box-shadow: .1em .1em .1em #37392D;
   margin: 2em 0;
 }
 .bottom-block-margin {
   margin-bottom: 2em;
+}
+.vert-center {
+  align-items: center;
+}
+.code {
+  background-color: #272822;
+  color: #F8F8F2;
+  font-family: 'Monaco', monospace;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  text-align: left;
+  padding: 1em;
+  border-radius: .3em;
+}
+.keyword {
+  color: #F92672;
+}
+.comment {
+  color: #75715E;
+}
+.name {
+  color: #A6E22E;
+}
+.string {
+  color: #E6DB74;
+}
+.constant {
+  color: #AE81FF;
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */

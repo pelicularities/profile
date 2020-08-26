@@ -13,13 +13,14 @@
     <div class="card text-center">
       <h1>Hello! I'm Grace.</h1>
       <img class="img-circle" src="images/grace.png" alt="Grace Teng's photo" width="100" height="100">
-      <h2>I'm a programmer 👩‍💻</h2>
+      <h2 id="tagline">
+        Learning full-stack web development 👩‍💻<br>at Le Wagon
+        <img class="vert-center" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" width="24" height="24" />
+      </h2>
       <p class="bottom-block-margin">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur iste
-        optio tempora repellendus molestiae in laboriosam asperiores, aut, dolores
-        doloribus at, nulla. Perferendis praesentium alias libero voluptatem, iste quam repellendus.
+
       </p>
-      <a href="#" class="btn">A button</a>
+      <a href="https://github.com/pelicularities" class="btn">See my Github profile</a>
     </div>
     <div class="card text-center">
       <h2>Something here</h2>
@@ -30,12 +31,33 @@
       </p>
     </div>
     <div class="card text-center">
-      <h2>Something here</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur iste
-        optio tempora repellendus molestiae in laboriosam asperiores, aut, dolores
-        doloribus at, nulla. Perferendis praesentium alias libero voluptatem, iste quam repellendus.
-      </p>
+      <h2>Full of Class</h2>
+
+      <!-- formatted code begins here -->
+      <!-- haven't figured out how else to render indents without a ton of &nbsp; -->
+      <pre class="code">
+<span class="keyword">require</span> <span class="string">'singleton'</span>
+<span class="keyword">class</span> <span class="name">Grace</span>
+  <span class="keyword">include</span> Singleton <span class="comment"># there can only be one</span>
+  <span class="keyword">attr_reader</span> <span class="constant">:likes</span>, <span class="constant">:education</span>
+
+  <span class="keyword">def</span> <span class="name">initialize</span>
+    likes <span class="keyword">=</span> [
+      <span class="string">"musicals"</span>,
+      <span class="string">"video games"</span>,
+      <span class="string">"technology"</span>
+    ]
+    @education <span class="keyword">=</span> {
+      <span class="constant">university:</span> <span class="string">"New York University"</span>,
+      <span class="constant">graduated: 2014</span>,
+      <span class="constant">majors:</span> [<span class="string">"Film and TV"</span>, <span class="string">"Spanish"</span>],
+      <span class="constant">minors:</span> [<span class="string">"Linguistics"</span>]
+    }
+  end
+end</pre>
+
+    <!-- formatted code ends here -->
+
     </div>
     <div class="card text-center">
       <h2>Something here</h2>
@@ -48,9 +70,8 @@
     <div class="card text-center">
       <h2>Follow me</h2>
       <ul id="social-links" class="list-inline">
-        <li><a href="#"><i class="fab fa-github"></i></a></li>
-        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/pelicularities"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/graceteng89/"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div>
   </div>
