@@ -39,22 +39,53 @@
 <span class="keyword">require</span> <span class="string">'singleton'</span>
 <span class="keyword">class</span> <span class="name">Grace</span>
   <span class="keyword">include</span> Singleton <span class="comment"># there can only be one</span>
-  <span class="keyword">attr_reader</span> <span class="constant">:likes</span>, <span class="constant">:education</span>
 
-  <span class="keyword">def</span> <span class="name">initialize</span>
-    @likes <span class="keyword">=</span> [
+  <span class="keyword">def</span> <span class="name">interests</span>
+    [
       <span class="string">"musicals"</span>,
       <span class="string">"video games"</span>,
       <span class="string">"technology"</span>
     ]
-    @education <span class="keyword">=</span> {
-      <span class="constant">university:</span> <span class="string">"New York University"</span>,
-      <span class="constant">graduated: 2014</span>,
-      <span class="constant">majors:</span> [<span class="string">"Film and TV"</span>, <span class="string">"Spanish"</span>],
-      <span class="constant">minors:</span> [<span class="string">"Linguistics"</span>]
-    }
-  end
-end</pre>
+  <span class="keyword">end</span>
+
+  <span class="keyword">def</span> <span class="name">jobs</span>
+    [
+      {
+        <span class="constant">company:</span> <span class="string">'Mendefits'</span>,
+        <span class="constant">role:</span> <span class="string">'Customer Support / QA'</span>,
+        <span class="constant">start: 2019</span>,
+        <span class="constant">end: 2020</span>
+      },
+      {
+        <span class="constant">company:</span> <span class="string">'The Learning Lab'</span>,
+        <span class="constant">role:</span> <span class="string">'Specialist Teaching Associate'</span>,
+        <span class="constant">start: 2015</span>,
+        <span class="constant">end: 2017</span>
+      }
+    ]
+  <span class="keyword">end</span>
+
+  <span class="keyword">def</span> <span class="name">education</span>
+    [
+      {
+        <span class="constant">school:</span> <span class="string">'Le Wagon'</span>,
+        <span class="constant">campus:</span> <span class="string">'Singapore'</span>,
+        <span class="constant">learning:</span> [
+          <span class="string">'Ruby'</span>,
+          <span class="string">'SQL'</span>,
+          <span class="string">'HTML'</span>,
+          <span class="string">'CSS'</span>,
+        ]
+      },
+      {
+        <span class="constant">school:</span> <span class="string">"New York University"</span>,
+        <span class="constant">graduated: 2014</span>,
+        <span class="constant">majors:</span> [<span class="string">"Film and TV"</span>, <span class="string">"Spanish"</span>],
+        <span class="constant">minors:</span> [<span class="string">"Linguistics"</span>]
+      }
+    ]
+  <span class="keyword">end</span>
+<span class="keyword">end</span></pre>
 
     <!-- formatted code ends here -->
 
